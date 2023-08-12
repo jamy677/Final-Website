@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRODUCT PAGE</title>
+    <link rel="stylesheet" href="./css/product.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  </head>
+  <body><div class="nav" id="navbar">
+            <input type="checkbox" id="nav-check">
+                <img src="./img/nikelogo2.png" alt="logo">
+            <div class="nav-btn">
+              <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+              </label>
+            </div>
+            
+            <div class="nav-links">
+              <a href="home.html" >HOME</a>
+              <a href="product.html" >PRODUCT</a>
+              <a href="aboutus.html" >ABOUT US</a>
+              <a href="contactpage.html">CONTACT US</a>
+              
+            </div>
+          </div> 
+          <!-- product section -->
+    <div class="container">
+      <div class="product-wrapper">
+        <div class="product-img">
+           <img src="./img/air-jordan-1-2022-lost-and-found-chicago-the-inspiration-behind-the-design.jpeg" alt="" />
+          </div>
+        <div class="div"  >
+        </div>              
+        <div class="product-info">
+          <div class="product-description">
+            <div class="product-title">Air Jordan 1 Chicago</div>
+            <div class="product-price">CA$ 559.99</div>
+            <div class="product-desc">You already know what the Air Jordan 1 is all about. It’s a staple of sneaker culture.
+
+              The Air Jordan 1, however, wasn’t destined to be an all-time classic.
+              
+              When it first debuted in 1985, there weren’t grand expectations. Instead, there were critics loudly chirping about Nike’s decision to give Michael Jordan a large sneaker deal before he played a single game and the rookie’s choice to sign with a company that, up to that point, was best known for running shoes.</div>
+            <div class="product-shoes">
+              <h4>Wanna add some Low's to the collection ?</h4>
+                <div class="parent">
+                  
+                    <div class="div1"><img src="./img/FRAGMENT x TRAVIS SCOTT x NIKE AIR JORDAN 1 LOW DM7866-140.jpeg" alt="" > </div>
+                    <div class="div2"><img src="./img/Nike Air Jordan 1 Low x Travis Scott CQ4277-001.jpeg" alt=""> </div>
+                    <div class="div3"><img src="./img/Nike design Marca nike Nike fashion shoes Tenis nike Nike sneakers.jpeg" alt=""> </div>
+                    <div class="div4"><img src="./img/NIKE SB DUNK LOW x Travis Scott Jackboys CT5053-001.jpeg" alt=""> </div>
+                    </div>
+            </div>
+          </div>
+          <div class="product-add-to-cart"><button>Add to bag</button> </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // animation for the production section
+      gsap.from(".navbar", 1, { y: -100, ease: Expo.easeInOut });
+      gsap.from(".product-info", 1, { x: 600, ease: Expo.easeInOut });
+      gsap.from(".product-img", 2, { y: 7670, ease: Expo.easeInOut });
+      gsap.from(".product-img2", 1, { y: 7670, ease: Expo.easeInOut });
+
+      gsap.from(".product-add-to-cart", 2, {
+        oapcity: 0,
+        y: 600,
+        ease: Expo.easeInOut,
+        delay: 1,
+      });
+      TweenMax.staggerFrom(
+        ".product-description > div",
+        3,
+        { opacity: 0, x: 200, ease: Expo.easeInOut, delay: 1.4 },
+        0.08
+      );
+      
+    </script>
+  </body>
+</html>
